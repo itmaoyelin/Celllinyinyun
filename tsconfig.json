@@ -1,0 +1,22 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@": ["./src"],
+      // "@network/*": ["src/network/*"],
+      // "@/network/request": ["./src/network/request.ts"]
+    },
+    "preserveValueImports": false,
+  },
+  
+  "types": [
+    "node" 
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ]
+}

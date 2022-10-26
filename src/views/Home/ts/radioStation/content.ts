@@ -1,0 +1,76 @@
+
+export interface Dj {
+	defaultAvatar: boolean;
+	province: number;
+	authStatus: number;
+	followed: boolean;
+	avatarUrl: string;
+	accountStatus: number;
+	gender: number;
+	city: number;
+	birthday: number;
+	userId: number;
+	userType: number;
+	nickname: string;
+	signature: string;
+	description: string;
+	detailDescription: string;
+	avatarImgId: number;
+	backgroundImgId: number;
+	backgroundUrl: string;
+	authority: number;
+	mutual: boolean;
+	expertTags?: any;
+	experts?: any;
+	djStatus: number;
+	vipType: number;
+	remarkName?: any;
+	authenticationTypes: number;
+	avatarDetail?: any;
+	avatarImgIdStr: string;
+	anchor: boolean;
+	backgroundImgIdStr: string;
+	avatarImgId_str: string;
+}
+
+export interface RootObject {
+	dj: Dj;
+	category: string;
+	secondCategory: string;
+	buyed: boolean;
+	price: number;
+	originalPrice: number;
+	discountPrice?: any;
+	purchaseCount: number;
+	lastProgramName: string;
+	videos?: any;
+	finished: boolean;
+	underShelf: boolean;
+	liveInfo?: any;
+	playCount: number;
+	privacy: boolean;
+	icon?: any;
+	manualTagsDTO?: any;
+	descPicList?: any;
+	dynamic: boolean;
+	shortName?: any;
+	categoryId: number;
+	taskId: number;
+	createTime: number;
+	programCount: number;
+	subCount: number;
+	picId: number;
+	feeScope: number;
+	lastProgramId: number;
+	lastProgramCreateTime: number;
+	radioFeeType: number;
+	intervenePicUrl: string;
+	picUrl: string;
+	intervenePicId: number;
+	desc: string;
+	name: string;
+	id: number;
+	rcmdtext: string;
+	subed: boolean;
+	lastUpdateProgramName: string;
+}

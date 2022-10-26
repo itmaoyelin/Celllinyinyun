@@ -1,0 +1,35 @@
+{
+  "name": "vue-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --port 8002 --mode deve ",
+    "build": "run-p type-check build-only",
+    "preview": "vite preview --port 4173",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@vueuse/core": "^9.2.0",
+    "axios": "^0.27.2",
+    "default-passive-events": "^2.0.0",
+    "js-md5": "^0.7.3",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.14",
+    "rollup-plugin-visualizer": "^5.8.1",
+    "swiper": "^8.2.6",
+    "vant": "^3.5.2",
+    "vue": "^3.1",
+    "vue-router": "^4.0.16"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.45",
+    "@types/nprogress": "^0.2.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/tsconfig": "^0.1.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "~4.7.4",
+    "unplugin-vue-components": "^0.21.2",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.38.1"
+  }
+}
