@@ -11,7 +11,7 @@ const router = Vrouter
 export function request(config: any) {
   const instance = axios.create({
     baseURL: import.meta.env.VITE_HTTP,
-    // timeout: 10000,
+    timeout: 10000,
   })
   NProgress.start()
   NProgress.inc();

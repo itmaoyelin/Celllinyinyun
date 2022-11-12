@@ -12,12 +12,13 @@ export default defineConfig({
       // 选项写法
       '/api': {
         // target: 'http://localhost:3000',    //实际请求的接口地址
-        target: 'https://www.mylapi.icu/', 
+        target: 'https://www.mylapi.icu', 
         changeOrigin: true,             //是否伪装
         rewrite: (path) => path.replace(/^\/api/, '')
       },
     }
   },
+   
   plugins: [
     vue({
       template: {
@@ -41,6 +42,7 @@ export default defineConfig({
     },
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json']
   },
+  
   build:{
     chunkSizeWarningLimit:2000,
     cssCodeSplit:true, //css 拆分
